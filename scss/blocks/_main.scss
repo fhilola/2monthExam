@@ -1,0 +1,147 @@
+main{
+    .container{
+        .main-wrapper{
+            display: flex;
+            // background-color: dodgerblue;
+            margin-top: 40px;
+            .main-box{
+                display: flex;
+                flex-direction: column;
+                gap: 16px 0;
+                
+                .box{
+                    border-radius: 10px;
+                    background: #FFF;
+                    box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.12);
+                    border: 2px solid transparent;
+                    transition: 0.3s;
+                    &:hover{
+                        border: 2px solid #0B7572;
+                    }
+                    .box-content{
+                        padding: 48px 125px 40px 48px;
+                        display: flex;
+                        flex-direction: column;
+                        // align-items: center;
+                        justify-content: center;
+                        .radio{
+                            display: inline-flex;
+                            gap: 0 32px;
+                            align-items: center;
+                            cursor: pointer;
+                            color: $main-color;
+                            font-family: $big-fonts;
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: 150%;
+                            .radio-input{
+                                display: none;
+                            }
+                            .radio__radio{
+                                width: 1.25em;
+                                height: 1.25em;
+                                border: 2px solid #d8e4e2;
+                                border-radius: 50%;
+                                box-sizing: border-box;
+                                padding: 5px;
+                                &::after{
+                                    content: "";
+                                    width: 100%;
+                                    height: 100%;
+                                    display: block;
+                                    background: #0B7572;
+                                    border-radius: 50%;
+                                    transform: scale(0);
+                                    transition: transform 0.15s;
+                                }
+                            }
+                            .radio-input:checked + .radio__radio::after{
+                                transform: scale(1);
+                            }
+                        }
+                    }
+                     p{
+                        max-width: 466px;
+                        color: $secondary-color;
+                        font-family: $smal-fonts;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 150%;
+                        padding-left: 32px;
+                        padding-top: 24px;
+                     }
+    
+                }
+                }
+
+        }
+        .voting{
+            .voting-content{
+                margin-left: 140px;
+                padding-bottom: 39px;
+                border-bottom: 4px solid #FFCE50;
+                strong{
+                    color: $main-color;
+                    font-family: $big-fonts;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 150%;
+                }
+                .info{
+                    display: flex;
+                    align-items: flex-end;
+                    gap: 0 10px;
+                    h2{
+                        color:  $main-color;
+                        font-family: $big-fonts;
+                        font-size: 54px;
+                        font-weight: 600;
+                        line-height: 150%;
+                    }
+                    span{
+                        color: $secondary-color;
+                        font-family: $big-fonts;
+                        font-size: 20px;
+                        font-weight: 600;
+                        line-height: 150%;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+        .banner{
+            position: relative;
+            margin-top: 100px;
+            h2{
+                position: absolute;
+                top: 178px;
+                left: 90px;
+                z-index: 2;
+                max-width: 362px;
+                color: $white-color;
+                font-family: $big-fonts;
+                font-size: 48px;
+                font-weight: 600;
+                line-height: 125%;
+            }
+            .overlay{
+                position:absolute;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                img{
+                    max-width: 100%;
+                }
+            }
+            .hero{
+                position: absolute;
+                z-index: 0;
+                top: 0;
+                right: 0;
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}

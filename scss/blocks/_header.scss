@@ -1,0 +1,106 @@
+header{
+    margin-top: 109px;
+    .container{
+        .header-wrapper{
+            display: flex;
+            gap: 0 20px;
+            // background-color: dodgerblue;
+            .header-wrapper__image{
+                .desktop-image{
+                    max-width: 635px;   
+                }
+                .tablet-image{
+                    display: none;
+                }
+            }
+            .header-wrapper__content{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                h1{
+                    max-width: 610px;
+                    color: $main-color;
+                    font-family: $big-fonts;
+                    font-size: 52px;
+                    font-weight: 600;
+                    line-height: 125%;
+                }
+                p{
+                    max-width: 525px;
+                    color:$secondary-color;
+                    font-family: $smal-fonts;
+                    line-height: 150%;
+                    margin: 40px 0;
+                }
+                a{
+                    color:$main-color;
+                    font-family: $smal-fonts;
+                    font-weight: 700;
+                    line-height: 150%;
+                    text-decoration: none;
+                    padding-bottom: 10px;
+                    border-bottom: 4px solid #FFCE50;
+                }
+            }
+        } 
+        .card-wrapper{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto;
+            margin-top: 67px;
+            border-radius: 20px;
+            background: $white-color;
+            box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
+            .card{
+                // background-color: dodgerblue;
+                // border: 1px solid black;
+                .card-content{
+                    margin-left: 80px;
+                    margin-top: 40px;
+                    border-right: 1px solid #D7D7DD;
+                    h3{
+                        max-width: 228px;
+                        color:  $main-color;
+                        font-family: $big-fonts;
+                        font-size: 20px;
+                        font-weight: 600;
+                        line-height: 135%;
+                        padding-top: 24px;
+                        padding-bottom: 16px;
+                    }
+                    p{
+                        max-width: 225px;
+                        color: $secondary-color;
+                        font-family: $smal-fonts;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 150%;
+                    }
+                }
+                
+            }
+        }
+        .title{
+            margin-top: 100px;
+            h2{
+                max-width: 100%;
+                color:$main-color;
+                font-family: $big-fonts;
+                font-size: 48px;
+                font-weight: 600;
+                line-height: 125%;
+                margin-bottom: 32px;
+            }
+            p{
+                max-width: 667px;
+                color: $secondary-color;
+                font-family: $smal-fonts;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 150%;
+            } 
+        }
+    }
+}
+

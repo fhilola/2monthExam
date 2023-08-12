@@ -1,0 +1,21 @@
+@import 'reset';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$main-color: #363738;
+$secondary-color: #6B6B6C;
+$white-color:#FFF;
+$last-color: #0B7572;
+$big-fonts: 'Exo 2';
+$smal-fonts: 'PT Sans';
+
+
+@import '../scss/blocks/blocks';
+@import 'media';
+@import 'container';
+@import 'fonts';
+
